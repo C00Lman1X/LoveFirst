@@ -1,5 +1,5 @@
-require 'common'
-require 'point'
+require 'utils.common'
+require 'utils.point'
 
 Button = {
 	new = function(self, pos, size, text, color, action)
@@ -27,6 +27,7 @@ Button = {
 		love.graphics.setColor(self.color:get())
 		love.graphics.rectangle('fill', self.pos[1], self.pos[2], self.size[1], self.size[2])
 		love.graphics.setColor(0, 0, 0)
+		love.graphics.printf(self.text, self.pos[1], self.pos[2], self.size[1], 'center')
 		love.graphics.rectangle('line', self.pos[1], self.pos[2], self.size[1], self.size[2])
 
 		love.graphics.setColor(r, g, b, a)

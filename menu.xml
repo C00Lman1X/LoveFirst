@@ -1,0 +1,4 @@
+<menu>
+	<Button x="0" y="0" w="100" h="50" text="button1" func="Btn1Click" r="100" g="100" b="100" />
+	<Button x="0" y="50" w="100" h="50" text="button2" func="Btn2Click" r="100" g="200" b="100" />
+</menu>
